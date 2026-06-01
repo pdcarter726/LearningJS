@@ -1,0 +1,25 @@
+/*
+    Create a loop that repeatedly prompts for a number
+    greater than 100. If a number less than 100 is entered
+    prompt again. Continue until a number input is over 100
+    or the user cancels.
+
+    Assume only numbers are entered by the user.
+*/
+
+<!DOCTYPE html> 
+    <html>
+        <body>
+            <script>
+                'use strict';
+                while(true) {
+                    let number = prompt ("Enter a number greater than 100", "0");
+                    if(number == null || number === "" || number > 100) {
+                        break;
+                    } else {
+                      alert("Number must be greater than 100");  
+                    }
+                }
+            </script>
+        </body>   
+    </html>  
