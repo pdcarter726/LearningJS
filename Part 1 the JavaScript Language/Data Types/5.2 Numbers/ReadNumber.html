@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html>
+        <body>
+            <script>
+                'use strict'
+                let a;
+                do {
+                    a = prompt("Enter a number", 0);
+                } while (!isFinite(a));
+
+                if(a === null || a === '') alert("null");
+
+                alert(+a);
+            </script>
+        </body>
+    </html>
+
+function readNumber() {
+    let a;
+    do {
+        a = prompt("Enter a number", 0)
+    } while( !isFinite(a));
+
+    if( a === null || a === '') return null;
+
+    return +a;
+}
